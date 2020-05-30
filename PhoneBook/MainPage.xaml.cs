@@ -15,7 +15,7 @@ using Windows.UI.Xaml.Navigation;
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
-namespace View
+namespace PhoneBook
 {
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
@@ -27,9 +27,14 @@ namespace View
             this.InitializeComponent();
         }
 
-        private void InitializeComponent()
+        private void Add_Button_Click(object sender, RoutedEventArgs e)
         {
-            throw new NotImplementedException();
+            this.Frame.Navigate(typeof(AddNumber), null);
+        }
+
+        private void List_Button_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ListNumber), null);
         }
     }
 }

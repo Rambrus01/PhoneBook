@@ -119,9 +119,15 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="AddNumber.xaml.cs">
+      <DependentUpon>AddNumber.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ListNumber.xaml.cs">
+      <DependentUpon>ListNumber.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Model\PhoneNumber.cs" />
     <Compile Include="Model\PhoneNumberManager.cs" />
-    <Compile Include="View\MainPage.xaml.cs">
+    <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -146,7 +152,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Page Include="View\MainPage.xaml">
+    <Page Include="AddNumber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ListNumber.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="MainPage.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -158,6 +172,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="ViewModel\" />
+    <Folder Include="View\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

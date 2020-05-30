@@ -10,6 +10,16 @@ namespace PhoneBook.Model
     {
         private List<PhoneNumber> phoneNumbers = new List<PhoneNumber>();
 
+        private static PhoneNumberManager instance;
+        public static PhoneNumberManager Instance()
+        {
+            if (instance == null)
+            {
+                instance = new PhoneNumberManager();
+            }
+            return instance;
+        }
+
         public PhoneNumberManager()
         {
         }
@@ -22,6 +32,11 @@ namespace PhoneBook.Model
         public void DeletePhoneNumber(PhoneNumber phoneNumber)
         {
             phoneNumbers.Remove(phoneNumber);
+        }
+
+        public List<PhoneNumber> getAllNumber()
+        {
+            return this.phoneNumbers;
         }
     }
 }
