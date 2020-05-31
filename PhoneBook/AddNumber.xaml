@@ -10,11 +10,11 @@
 
     <Grid>
         <TextBlock HorizontalAlignment="Left" Margin="725,280,0,0" Text="New Phone Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
-        <TextBox Name="PhoneNumberTextBox"  HorizontalAlignment="Left" Margin="700,350,100,100" Text="Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
-        <TextBox Name="OwnerTextBox" HorizontalAlignment="Left" Margin="700,380,100,100" Text="Person" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox Name="PhoneNumberTextBox"  HorizontalAlignment="Stretch" Margin="200,350,100,100" Text="Number" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
+        <TextBox Name="OwnerTextBox" HorizontalAlignment="Stretch" Margin="200,380,100,100" Text="Person" TextWrapping="Wrap" VerticalAlignment="Top" Width="200"/>
         <Button Content="Add" Height="33" Margin="725,500,0,0" VerticalAlignment="Top" Width="150" Click="Button_Click"/>
         <Button Content="Back" Height="33" Margin="725,627,0,0" VerticalAlignment="Top" Width="150" Click="Back_Button_Click"/>
-        <TextBlock Name="IsValid" HorizontalAlignment="Left" Margin="771,456,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top"/>
+        <TextBlock Name="IsValid" HorizontalAlignment="Left" Margin="725,456,0,0" Text=" " TextWrapping="Wrap" VerticalAlignment="Top" Width="150"/>
 
 
 

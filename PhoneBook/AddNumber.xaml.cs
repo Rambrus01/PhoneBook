@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -34,6 +35,8 @@ namespace PhoneBook
             {
                 var number = new PhoneNumber(PhoneNumberTextBox.Text, OwnerTextBox.Text);
                 PhoneNumberManager.Instance().AddPhoneNumber(number);
+                IsValid.Text ="number succesfuly added.";
+                
             }
         }
 
